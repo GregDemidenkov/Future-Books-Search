@@ -8,7 +8,7 @@
 - React
 - Redux(Redux Toolkit)
 - TypeScript
-- axios (interceptors)
+- axios
 - Google Books API
   <br/><br/>
 
