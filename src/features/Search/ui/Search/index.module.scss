@@ -1,0 +1,33 @@
+@import '@shared/assets/styles/constants.scss';
+
+
+.searchContainer {
+    width: 520px;
+    height: 50px;
+    display: flex;
+    border: 2px solid $green;
+    border-radius: 40px;
+    padding-right: 10px;
+
+    @media (max-width: 672px) {
+        width: 300px;
+    }
+
+    input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        padding-left: 20px;
+        background-color: inherit;
+        font-size: 26px;
+    }
+
+    button {
+        height: 100%;
+        width: 40px;
+        background: url('@shared/assets/img/search.svg') no-repeat center;
+        cursor: pointer;
+    }
+}

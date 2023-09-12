@@ -1,0 +1,70 @@
+@import '@shared/assets/styles/constants.scss';
+
+
+.container {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 991px) {
+        margin: 40px 0;
+    }
+
+    h1 {
+        font-size: 72px;
+        text-align: center;
+        color: $gray;
+        border-bottom: 4px solid $green;
+        border-radius: 4px;
+
+        span {
+            color: $green;
+        }
+
+        @media (max-width: 672px) {
+            font-size: 42px;
+        }
+    }
+
+    div, form {
+        margin-top: 40px;
+    }
+}
+
+.foundCount {
+    font-size: 24px;
+    font-weight: 500;
+    color: $gray;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booksList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 80px;
+    row-gap: 52px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 672px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.loadMoreContainer {
+    padding-bottom: 40px !important;
+}
